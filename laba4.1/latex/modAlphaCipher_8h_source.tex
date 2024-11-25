@@ -1,0 +1,52 @@
+\hypertarget{modAlphaCipher_8h_source}{}\doxysection{/home/stud/laba4/mod\+Alpha\+Cipher.h}
+\mbox{\hyperlink{modAlphaCipher_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{classmodAlphaCipher}{modAlphaCipher}}}
+\DoxyCodeLine{22 \{}
+\DoxyCodeLine{23 \textcolor{keyword}{private}:}
+\DoxyCodeLine{24     wstring numAlpha = L\textcolor{stringliteral}{"{}АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"{}}; }
+\DoxyCodeLine{25     map<char, int> alphaNum; }
+\DoxyCodeLine{26     vector<int> key; }
+\DoxyCodeLine{33     vector<int> convert(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& s);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{40     \textcolor{keywordtype}{string} convert(\textcolor{keyword}{const} vector<int>\& v);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{string} getValidKey(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& s);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{56     \textcolor{keywordtype}{string} getValidOpenText(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& s);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{string} getValidCipherText(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& s);}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66 \textcolor{keyword}{public}:}
+\DoxyCodeLine{70     \mbox{\hyperlink{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}{modAlphaCipher}}() = \textcolor{keyword}{delete};}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{77     \mbox{\hyperlink{classmodAlphaCipher_a6c6305969b8a57ac1c1c9cc5f5215b6d}{modAlphaCipher}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& skey);}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{string} \mbox{\hyperlink{classmodAlphaCipher_a1d0fa019ca6d45f7245d0b9152befbcf}{encrypt}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& open\_text);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{93     \textcolor{keywordtype}{string} \mbox{\hyperlink{classmodAlphaCipher_afa139cc2e74859b5d4eb9507e7a21e39}{decrypt}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& cipher\_text);}
+\DoxyCodeLine{94 \};}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{103 \textcolor{keyword}{class }\mbox{\hyperlink{classcipher__error}{cipher\_error}} : \textcolor{keyword}{public} invalid\_argument}
+\DoxyCodeLine{104 \{}
+\DoxyCodeLine{105 \textcolor{keyword}{public}:}
+\DoxyCodeLine{110     \textcolor{keyword}{explicit} \mbox{\hyperlink{classcipher__error_a9ba2f81af463a8ff742881d6bfcbd93f}{cipher\_error}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& what\_arg)}
+\DoxyCodeLine{111         : invalid\_argument(what\_arg)}
+\DoxyCodeLine{112     \{}
+\DoxyCodeLine{113     \}}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{119     \textcolor{keyword}{explicit} \mbox{\hyperlink{classcipher__error_a18cf27d9c2cd2538d3cb8f17e9a55f3e}{cipher\_error}}(\textcolor{keyword}{const} \textcolor{keywordtype}{char}* what\_arg)}
+\DoxyCodeLine{120         : invalid\_argument(what\_arg)}
+\DoxyCodeLine{121     \{}
+\DoxyCodeLine{122     \}}
+\DoxyCodeLine{123 \};}
+
+\end{DoxyCode}

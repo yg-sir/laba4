@@ -1,0 +1,27 @@
+\begin{theindex}
+
+  \item {/home/stud/laba4/modAlphaCipher.h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {cipher\_error}, \hyperpage{7}
+    \subitem {cipher\_error}, \hyperpage{8}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {modAlphaCipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {modAlphaCipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {modAlphaCipher}, \hyperpage{9}
+    \subitem {decrypt}, \hyperpage{10}
+    \subitem {encrypt}, \hyperpage{10}
+    \subitem {modAlphaCipher}, \hyperpage{9}
+
+\end{theindex}

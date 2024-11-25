@@ -1,0 +1,103 @@
+\hypertarget{classmodAlphaCipher}{}\doxysection{Класс mod\+Alpha\+Cipher}
+\label{classmodAlphaCipher}\index{modAlphaCipher@{modAlphaCipher}}
+
+
+Реализует шифрование на основе модифицированного алфавита. Класс предоставляет методы для шифрования и дешифрования текста с использованием заданного ключа, основанного на предопределенном кириллическом алфавите.  
+
+
+
+
+{\ttfamily \#include $<$mod\+Alpha\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}\label{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}} 
+{\bfseries mod\+Alpha\+Cipher} ()=delete
+\begin{DoxyCompactList}\small\item\em Удаленный конструктор по умолчанию для обеспечения обязательной инициализации ключа. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmodAlphaCipher_a6c6305969b8a57ac1c1c9cc5f5215b6d}{mod\+Alpha\+Cipher}} (const string \&skey)
+\begin{DoxyCompactList}\small\item\em Строит шифр с конкретным ключом. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmodAlphaCipher_a1d0fa019ca6d45f7245d0b9152befbcf}{encrypt}} (const string \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Шифрует строку открытого текста с использованием текущего ключа. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmodAlphaCipher_afa139cc2e74859b5d4eb9507e7a21e39}{decrypt}} (const string \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Дешифрует строку зашифрованного текста с использованием текущего ключа. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Реализует шифрование на основе модифицированного алфавита. Класс предоставляет методы для шифрования и дешифрования текста с использованием заданного ключа, основанного на предопределенном кириллическом алфавите. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classmodAlphaCipher_a6c6305969b8a57ac1c1c9cc5f5215b6d}\label{classmodAlphaCipher_a6c6305969b8a57ac1c1c9cc5f5215b6d}} 
+\index{modAlphaCipher@{modAlphaCipher}!modAlphaCipher@{modAlphaCipher}}
+\index{modAlphaCipher@{modAlphaCipher}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{modAlphaCipher()}{modAlphaCipher()}}
+{\footnotesize\ttfamily mod\+Alpha\+Cipher\+::mod\+Alpha\+Cipher (\begin{DoxyParamCaption}\item[{const string \&}]{skey }\end{DoxyParamCaption})}
+
+
+
+Строит шифр с конкретным ключом. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em skey} & Строка-\/ключ, используемая для шифрования и дешифрования. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если ключ недопустим. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classmodAlphaCipher_afa139cc2e74859b5d4eb9507e7a21e39}\label{classmodAlphaCipher_afa139cc2e74859b5d4eb9507e7a21e39}} 
+\index{modAlphaCipher@{modAlphaCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string mod\+Alpha\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const string \&}]{cipher\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Дешифрует строку зашифрованного текста с использованием текущего ключа. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em cipher\+\_\+text} & Зашифрованная строка для дешифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Дешифрованный текст в виде строки. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст содержит недопустимые символы. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classmodAlphaCipher_a1d0fa019ca6d45f7245d0b9152befbcf}\label{classmodAlphaCipher_a1d0fa019ca6d45f7245d0b9152befbcf}} 
+\index{modAlphaCipher@{modAlphaCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily string mod\+Alpha\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const string \&}]{open\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Шифрует строку открытого текста с использованием текущего ключа. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em open\+\_\+text} & Простая строка для шифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст в виде строки. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & если текст содержит недопустимые символы. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+/home/stud/laba4/\mbox{\hyperlink{modAlphaCipher_8h}{mod\+Alpha\+Cipher.\+h}}\end{DoxyCompactItemize}
